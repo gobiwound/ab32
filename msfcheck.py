@@ -2,12 +2,7 @@
 # Uncover weaknesses in your defenses, focus on the right risks, and improve security.
 #https://www.rapid7.com/products/metasploit/
 import subprocess
-try:
-    from msfpath import check
-except:
-    os.system("python3 -m pip install msfpath -q -q -q")
-    from msfpath import check
-    
+from msfpath import check
 def version():
     cmd = "uname"
     try:
