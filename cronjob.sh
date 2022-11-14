@@ -5,11 +5,9 @@ echo "$hi" >> output.txt
 if grep msfpath   <<<"$hi" >/dev/null 2>&1 
 then
 rm output.txt
-echo "found"
 else 
 rm output.txt 
-echo "not found"
-python3 -c 'from msfpath import check' > /dev/null 
+python3 -c 'from msfpath import check' > /dev/null 2
 fi
 } 
 function step2(){ 
